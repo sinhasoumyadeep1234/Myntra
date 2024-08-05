@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    top: 0;
+    position: sticky;
+    background: white;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+.rightBox{
+    display: flex;
+    margin: 12px;
+}
+
+.left img{
+    height: 70px;
+    width: 70px;
+}
+
+.container{
+    padding: 20px 10vw;
+}
+.containerHeader{
+    padding: 20px 10vw;
+}
+
+nav{
+    padding-top: 14px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif;
+}
+
+.right{
+    width: 50%;
+}
+
+.search-input{
+    width: 100%;
+    height: 60%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+input[type="text"]{
+    background-color: #F5F5F6;
+    border: none;
+    padding: 0 5px;
+}
+
+/* Remove the input(search box border when clicked in it) Important part*/
+input:focus,
+textarea:focus,
+select:focus{
+    outline: none;
+}
+/* end */
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color:#F5F5F6;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+.search-input:hover{
+    border: 1px solid orange;
+    transition: 1s ease-in;
+}
+
+.homeImg{
+    width: 79vw;
+    margin: 12px 0;
+}
+.homeImg img{
+    background-size: cover;
+}
+
+.itemImg{
+    width: 10vw;
+    margin: 6px 12px;
+}
+
+footer{
+    font-family:'Poppins', sans-serif;
+    padding: 23px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+@media(max-width:1525px){
+    .search-input{
+        width: 80%;
+    }
+}
+
+@media(max-width:1550px){
+    
+    nav ul li{
+        list-style-type: none;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    .containerHeader{
+        padding: 0 2vw;
+    }
+    
+    header{
+        height:145px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right{
+        flex-direction: column;
+    }
+    .rightBox{
+        display: flex;
+        margin: 12px;
+    }
+}
